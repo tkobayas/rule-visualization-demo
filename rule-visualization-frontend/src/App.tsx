@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import { TopologyGettingStartedDemo } from './TopologyGettingStartedDemo';
+import { RulesTopology } from './RulesTopology';
 
 function App() {
   return (
     <div className="App" >
-      <TopologyGettingStartedDemo />
+      <RulesTopology />
     </div>
   );
 }

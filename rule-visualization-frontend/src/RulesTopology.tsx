@@ -89,7 +89,7 @@ const rulesJsonText = `{"name":"05 Post event","hosts":["all"],
 ]
 }`;
 
-export const TopologyGettingStartedDemo: React.FC = () => {
+export const RulesTopology: React.FC = () => {
   const [nodes, setNodes] = React.useState<Node[]>([]);
   const [edges, setEdges] = React.useState<Edge[]>([]);
 
