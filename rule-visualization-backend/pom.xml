@@ -13,6 +13,7 @@
   <properties>
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
+    <version.org.drools>999-SNAPSHOT</version.org.drools>
     <version.drools.ansible.rulebook.integration>1.0.5-SNAPSHOT</version.drools.ansible.rulebook.integration>
     <version.org.antlr4>4.13.0</version.org.antlr4>
     <version.io.quarkus>3.2.9.Final</version.io.quarkus>
@@ -42,6 +43,11 @@
       <groupId>org.drools</groupId>
       <artifactId>drools-ansible-rulebook-integration-visualization</artifactId>
       <version>${version.drools.ansible.rulebook.integration}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.drools</groupId>
+      <artifactId>drools-impact-analysis-graph-json</artifactId> <!-- temporal dependency until drools-ansible-rulebook-integration-visualization depends on it -->
+      <version>${version.org.drools}</version>
     </dependency>
     <dependency>
       <groupId>org.antlr</groupId>
