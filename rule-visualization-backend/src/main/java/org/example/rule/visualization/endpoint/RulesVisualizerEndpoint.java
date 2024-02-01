@@ -16,9 +16,9 @@ public class RulesVisualizerEndpoint {
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
     public String graphAsJson(String payload) {
-        //LOGGER.info("Received payload: {}", payload);
+        LOGGER.info("Received payload: {}", payload);
         String result = RulesVisualizerService.INSTANCE.graphAsJson(payload);
-        //LOGGER.info("Returning result: {}", result);
+        LOGGER.info("Returning result: {}", result);
         return result;
     }
 }

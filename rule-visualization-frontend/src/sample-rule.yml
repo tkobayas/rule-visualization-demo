@@ -1,0 +1,26 @@
+---
+- name: "05 Post event"
+  hosts: all
+  rules:
+    - name: r1
+      condition: event.i == 1
+      action:
+        post_event:
+            event:
+              msg: "hello world"
+    - name: r2
+      condition: event.msg == "hello world"
+      action:
+         set_fact:
+            fact:
+              status: "created"
+    - name: r3
+      condition: fact.status == "created"
+      action:
+        debug:
+    - name: r4
+      condition: event.i == 2
+      action:
+        retract_fact:
+              fact:
+                status: "created"

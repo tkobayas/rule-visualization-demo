@@ -14,7 +14,7 @@
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
     <version.org.drools>999-SNAPSHOT</version.org.drools>
-    <version.drools.ansible.rulebook.integration>1.0.5-SNAPSHOT</version.drools.ansible.rulebook.integration>
+    <version.drools.ansible.rulebook.integration>1.0.6-SNAPSHOT</version.drools.ansible.rulebook.integration>
     <version.org.antlr4>4.13.0</version.org.antlr4>
     <version.io.quarkus>3.2.9.Final</version.io.quarkus>
     <version.org.assertj>3.23.1</version.org.assertj>
